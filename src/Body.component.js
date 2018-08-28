@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
-
+import LanguageContext from './context/LanguageContext';
 export default class Body extends Component {
     render() {
         return (
-            <div className="body">
-                <div>Hey, right now you are in demo page of React context API.</div>
-            </div>
+            <LanguageContext.Consumer>
+            {
+                value => (
+                    <div className="body">
+                    {console.log('val', value)}
+                    <div>{value.body}</div>
+                </div>
+                )
+            }
+            </LanguageContext.Consumer>
         )
     }
 }
