@@ -10,8 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      language: 'fr',
-      theme: 'dark'
+      language: 'en',
+      theme: 'light'
     }
     this.toggleLanguage = this.toggleLanguage.bind(this);
     this.toggleTheme = this.toggleTheme.bind(this);
