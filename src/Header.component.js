@@ -25,17 +25,12 @@ export default class Header extends Component {
                       </select>
                     </div>
                     <div className="theme-selector">
-                      <span className="label">{language.labels.themeSelectLabel}</span>
-                      {/* <select value={theme.type} onChange={(event) => this.props.toggleTheme(event.currentTarget.value)}>
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                      </select> */}
+                      <span className="label">{language.labels.themeSelectLabel}({theme.type})</span>
                       <label className="switch">
                         <input type="checkbox" checked={theme.type === 'light'} onChange={(event) => this.props.toggleTheme(event.currentTarget.value)} />
                         <span className="slider round"></span>
                         
                       </label>
-                      <span className="label">{theme.type}</span>
                     </div>
                   </header>
                 )
