@@ -9,9 +9,9 @@ export default class Body extends Component {
           theme => (
             <LanguageContext.Consumer>
               {
-                value => (
-                  <div className="body" style={{color: theme.fontColor, background: theme.bodybg}}>
-                    <div>{value.body}</div>
+                language => (
+                  <div className="body" style={{color: theme.config.fontColor, background: theme.config.bodybg}}>
+                    <div>{language.labels.body}</div>
                   </div>
                 )
               }

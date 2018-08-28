@@ -1,28 +1,28 @@
 import React from 'react';
 export const labels = {
     en: {
-        themeSelectLabel: 'Select mode',
+        themeSelectLabel: 'Toggle theme',
         langSelectLabel: 'Select language',
         body: 'Hey, right now you are in demo page of React context API.'
     },
     fr: {
-        themeSelectLabel: 'Sélectionne un thème',
+        themeSelectLabel: 'Toggle theme',
         langSelectLabel: 'Choisir la langue',
         body: "Hé, maintenant vous êtes sur la page de démonstration de l'API de contexte de réaction."
     },
     sp: {
-        themeSelectLabel: 'Seleccione el tema',
+        themeSelectLabel: 'Alternar tema',
         langSelectLabel: 'Seleccione el idioma',
         body: 'Oye, ahora mismo estás en la página de demostración de la API de contexto de React.'
     },
     gr: {
-        themeSelectLabel: 'Auswahlmodus',
+        themeSelectLabel: 'Thema umschalten',
         langSelectLabel: 'Sprache auswählen',
         body: 'Hey, im Moment bist du auf der Demo-Seite von React Context API.'
     },
     hn: {
         langSelectLabel: 'भाषा चुनिए',
-        themeSelectLabel: 'चुनिंदा विषय',
+        themeSelectLabel: 'विषय टॉगल करें',
         body: 'अरे, अभी आप प्रतिक्रिया संदर्भ API के डेमो पेज में हैं।'
     }
 }
