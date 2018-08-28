@@ -1,0 +1,23 @@
+header {
+  background-color: #F7B30C;
+}
+header {
+  display: flex;
+  padding: 10px;
+}
+header div {
+  width: 33%;
+}
+header .language-selector {
+  text-align: center;
+}
+header .theme-selector {
+  text-align: right;
+}
+.body {
+ font-size: 48px;
+}
+.body div {
+  padding: 40px;
+  text-align: center;
+}
