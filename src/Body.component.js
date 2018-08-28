@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
 import LanguageContext from './context/LanguageContext';
+import ThemeContext from './context/ThemeContext';
 export default class Body extends Component {
-    render() {
-        return (
+  render() {
+    return (
+      <ThemeContext.Consumer>
+        {
+          theme => (
             <LanguageContext.Consumer>
-            {
+              {
                 value => (
-                    <div className="body">
-                    {console.log('val', value)}
+                  <div className="body" style={{color: theme.fontColor, background: theme.bodybg}}>
                     <div>{value.body}</div>
-                </div>
+                  </div>
                 )
-            }
+              }
             </LanguageContext.Consumer>
-        )
-    }
+          )
+        }
+      </ThemeContext.Consumer>
+    )
+  }
 }
