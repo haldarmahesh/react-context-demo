@@ -13,13 +13,19 @@ class App extends Component {
       language: 'fr',
       theme: 'dark'
     }
+    this.toggleLanguage = this.toggleLanguage.bind(this);
+  }
+  toggleLanguage(newLang) {
+    this.setState({
+      language: newLang
+    });
   }
   render() {
     return (
       <ThemeContext.Provider value={themeConfig[this.state.theme]}>
         <LanguageContext.Provider value={labels[this.state.language]}>
           <div>
-            <Header />
+            <Header toggleLanguage={this.toggleLanguage}/>
             <Body />
           </div>
         </LanguageContext.Provider>
