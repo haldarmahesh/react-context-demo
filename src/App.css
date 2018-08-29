@@ -21,10 +21,9 @@ header .theme-selector {
   cursor: pointer;
 }
 .body > div {
-  padding: 40px;
+  padding: 140px;
   text-align: center;
   height: 300px;
-  margin-top: 100px;
 }
 .theme-selector .label {
   top: -10px;
