@@ -9,7 +9,7 @@ export default class Header extends Component {
           theme => (
             <LanguageContext.Consumer>
               {
-                language => (
+                (language) => (
                   <header style={{ background: theme.config.headerBg, color: theme.config.fontColor }}>
                     <div className="logo-container">
                       <img src={theme.config.logo} />

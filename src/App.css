@@ -1,6 +1,9 @@
 header {
   display: flex;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header div {
   width: 33%;
@@ -17,10 +20,11 @@ header .theme-selector {
 .language-selector, .theme-selector {
   cursor: pointer;
 }
-.body div {
+.body > div {
   padding: 40px;
   text-align: center;
-  height: 400px;
+  height: 300px;
+  margin-top: 100px;
 }
 .theme-selector .label {
   top: -10px;

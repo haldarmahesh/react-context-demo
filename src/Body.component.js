@@ -6,7 +6,7 @@ export default class Body extends Component {
     return (
       <ThemeContext.Consumer>
         {
-          theme => (
+          (theme) => (
             <LanguageContext.Consumer>
               {
                 language => (

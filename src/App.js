@@ -30,10 +30,8 @@ class App extends Component {
     return (
       <ThemeContext.Provider value={{type: this.state.theme, config: themeConfig[this.state.theme]}}>
         <LanguageContext.Provider value={{name: this.state.language, labels: labels[this.state.language]}}>
-          <div>
             <Header toggleLanguage={this.toggleLanguage} toggleTheme={this.toggleTheme}/>
             <Body />
-          </div>
         </LanguageContext.Provider>
       </ThemeContext.Provider>
     );
