@@ -1,5 +1,5 @@
 header {
-  display: flex;
+  /* display: flex; */
   padding: 10px;
   position: fixed;
   top: 0;
@@ -7,9 +7,12 @@ header {
 }
 header div {
   width: 33%;
+  float: left;
 }
+
 header .language-selector {
   text-align: center;
+  padding: 10px 0px;
 }
 header .theme-selector {
   text-align: right;
@@ -85,4 +88,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  header div {
+    width: 100%;
+  }
+  .language-selector, header .theme-selector,  .logo-container {
+    text-align: center;
+  }
 }
